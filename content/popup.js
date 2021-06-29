@@ -72,7 +72,7 @@ function resetDate() {
     newDate = window.prompt("Enter date in the dd/mm/yyyy format");
     dateArray = newDate.split("/");
     // Check if the format is right - only numbers and valid length
-    dateString = dateArray[1] + " " + dateArray[0] + " " + dateArray[2];
+    dateString = dateArray[0] + " " + dateArray[1] + " " + dateArray[2];
 
     newDate = Date.parse(new Date(dateString));
     let content = '';
